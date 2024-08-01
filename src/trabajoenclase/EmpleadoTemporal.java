@@ -23,10 +23,18 @@ public class EmpleadoTemporal extends EmpleadoComun{
             return super.pagar();
         return 0;
     }
+    
+    public void setFinContrato(int año, int mes, int dia) {
+        this.finContrato.set(año, mes, dia);
+    }
 
     public String toString() {
         return super.toString()+"\nFinContrato= " + finContrato.getTime();
     }
+
+    
+    
+    
     
     
     
